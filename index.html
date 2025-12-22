@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>आज का सत्संग</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #ece5dd;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.header {
+  background: #075e54;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.date {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.text {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+audio {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<div class="header">🕉️ आज का सत्संग</div>
+
+<div class="card">
+  <div class="date">📅 आज – तारीख</div>
+  <audio controls src="today.mp3"></audio>
+  <div class="text">
+    आज का सत्संग संदेश यहाँ लिखें।
+  </div>
+</div>
+
+<div class="card">
+  <div class="date">📅 कल – तारीख</div>
+  <audio controls src="yesterday.mp3"></audio>
+  <div class="text">
+    कल का सत्संग संदेश।
+  </div>
+</div>
+
+<div class="card">
+  <div class="date">📅 उससे पहले – तारीख</div>
+  <audio controls src="daybefore.mp3"></audio>
+  <div class="text">
+    उससे पहले का सत्संग संदेश।
+  </div>
+</div>
+
+</div>
+</body>
+</html>
