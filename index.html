@@ -4,6 +4,21 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>||श्रीहरि:||</title>
+  <style>
+.play-button {
+  display: block;
+  width: 100%;
+  background-color: #1f7a4d;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 14px;
+  cursor: pointer;
+  font-weight: bold;
+}
+</style>
 
 <style>
 body {
@@ -95,7 +110,11 @@ audio {
   <div class="section-title">आज का सत्संग</div>
   <div class="date">तारीख: 22 दिसंबर 2025</div>
  <div class="audio-box">
-  <audio controls src="today.mp3"></audio>
+<div class="play-button" onclick="document.getElementById('audioToday').play();">
+  सत्संग सुनने के लिए यहाँ दबाएँ
+</div>
+
+<audio id="audioToday" controls src="today.mp3"></audio>
 </div>
   <div class="text">
 (9:50 मिनट का सत्संग)
