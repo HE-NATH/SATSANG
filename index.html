@@ -94,6 +94,19 @@ audio {
  .header-wrap {
   position: relative;
 }
+  .share-below {
+  display: block;
+  width: fit-content;
+  margin: 10px auto 20px auto; /* center + space */
+  background-color: #e6f3ec;
+  color: #075e54;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #075e54;
+  cursor: pointer;
+  font-weight: bold;
+}
 
 </style>
 
@@ -116,6 +129,13 @@ audio {
 हे नाथ! हे मेरे नाथ!<br>
 मैं आपको भूलूँ नहीं
 </div>
+<div class="share-below"
+     onclick="window.open(
+     'https://wa.me/?text=' +
+     encodeURIComponent('आज का सत्संग सुनने के लिए इस लिंक को खोलें:\nhttps://he-nath.github.io/SATSANG')
+     );">
+  Share / आगे भेजें
+</div>  
 
 <!-- TODAY -->
 <div class="card">
