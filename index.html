@@ -107,7 +107,14 @@ audio {
   cursor: pointer;
   font-weight: bold;
 }
-
+.share-svg {
+  width: 28px;
+  height: 28px;
+  fill: #075e54;   /* WhatsApp green */
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 20px auto; /* centered below heading */
+}
 </style>
 
 </head>
@@ -129,6 +136,19 @@ audio {
 हे नाथ! हे मेरे नाथ!<br>
 मैं आपको भूलूँ नहीं
 </div>
+ <svg class="share-svg"
+     viewBox="0 0 24 24"
+     onclick="window.open(
+     'https://wa.me/?text=' +
+     encodeURIComponent('आज का सत्संग सुनने के लिए इस लिंक को खोलें:\nhttps://he-nath.github.io/SATSANG')
+     );">
+
+  <circle cx="18" cy="5" r="3"></circle>
+  <circle cx="6" cy="12" r="3"></circle>
+  <circle cx="18" cy="19" r="3"></circle>
+  <line x1="8.5" y1="11" x2="15.5" y2="6" stroke="#075e54" stroke-width="2"/>
+  <line x1="8.5" y1="13" x2="15.5" y2="18" stroke="#075e54" stroke-width="2"/>
+</svg> 
 <div class="share-below"
      onclick="window.open(
      'https://wa.me/?text=' +
