@@ -129,18 +129,19 @@ audio {
   gap: 6px;
   font-size: 14px;
   padding: 4px 10px;
-  background-color: #e6f3ec;
-  color: #075e54;
-  border: 1px solid #075e54;
+  background-color: #f6c343;   /* yellow-orange */
+  color: #7a4a00;              /* dark orange text */
+  border: 1px solid #c98a00;   /* border */
   border-radius: 6px;
   cursor: pointer;
   white-space: nowrap;
+  text-decoration: none;
 }
 
 .download-btn svg {
   width: 16px;
   height: 16px;
-  fill: #075e54;
+  fill: #7a4a00;               /* icon color */
 }
 </style>
 
@@ -196,10 +197,10 @@ audio {
     <span>डाउनलोड</span>
 
     <svg viewBox="0 0 24 24" aria-hidden="true">
-      <path d="M12 3v10.2l3.6-3.6 1.4 1.4L12 17l-5-5 1.4-1.4 3.6 3.6V3z"/>
-      <path d="M5 19h14v2H5z"/>
-    </svg>
-
+  <path d="M12 3v10" stroke="#7a4a00" stroke-width="2" stroke-linecap="round"/>
+  <path d="M8 11l4 4 4-4" stroke="#7a4a00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M4 19h16" stroke="#7a4a00" stroke-width="2" stroke-linecap="round"/>
+</svg>
   </a>
 
 </div>
