@@ -92,9 +92,29 @@ audio {
   color: #000;
 }
 </style>
+  .share-top {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  background-color: #e6f3ec;
+  color: #075e54;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: 1px solid #075e54;
+  cursor: pointer;
+  z-index: 1000;
+}
 </head>
 
 <body>
+ <div class="share-top"
+     onclick="window.open(
+     'https://wa.me/?text=' +
+     encodeURIComponent('आज का सत्संग सुनने के लिए इस लिंक को खोलें:\nhttps://he-nath.github.io/SATSANG')
+     );">
+  आगे भेजें
+</div> 
 <div class="container">
 
 <div class="header">||ॐ श्री परमात्मने नमः||</div>
