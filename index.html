@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
+<link rel="manifest" href="manifest.json">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-SPXQQXGQYT"></script>
 <script>
@@ -152,6 +153,20 @@ audio {
   height: 16px;
   fill: #7a4a00;               /* icon color */
 }
+.install-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 10px auto;
+  padding: 8px 14px;
+  background-color: #e6f3ec;
+  border: 1px solid #075e54;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #075e54;
+  cursor: pointer;
+  font-weight: bold;
+}
 </style>
 
 </head>
@@ -191,6 +206,9 @@ audio {
   </svg>
 
 </div> 
+<div class="install-btn" id="installBtn">
+  📱 Add to Home Screen
+</div>
 
 <!-- TODAY -->
 <div class="card">
@@ -306,5 +324,21 @@ audio {
 </div>
 
 </div>
+<script>
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'inline-flex';
+});
+
+installBtn.addEventListener('click', async () => {
+  if (!deferredPrompt) return;
+  deferredPrompt.prompt();
+  deferredPrompt = null;
+});
+</script>
 </body>
 </html>
