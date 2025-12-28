@@ -1,0 +1,15 @@
+{
+  "name": "Satsang",
+  "short_name": "Satsang",
+  "start_url": "/SATSANG/",
+  "display": "standalone",
+  "background_color": "#e5ddd5",
+  "theme_color": "#075e54",
+  "icons": [
+    {
+      "src": "today.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    }
+  ]
+}
